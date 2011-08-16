@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @image.url %>
+</p>
+
+<p>
+  <b>Image_Url:</b>
+  <%= image_tag(@image.image_url) if not @image.image_url.nil? %>
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
